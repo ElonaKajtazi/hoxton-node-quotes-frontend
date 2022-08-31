@@ -7,11 +7,20 @@ export function Quotes({ quotes }: Props) {
   return (
     <>
       <h1>Famous Quotes</h1>
-      <ul>
+      <ul className="quotes">
         {quotes.map((quote) => (
-          <li key={quote.id}>
-            <h2>{quote.quote}</h2>
-            <h3>― {quote.author}</h3>
+          <li key={quote.id} className="quote-card">
+            <img
+              className="author-image"
+              src={quote.author.image}
+              alt={quote.author.firstName}
+            />
+            <div className="author-info">
+              <h2 className="quote">{quote.quote}</h2>
+              <h3 className="author">
+                ― {quote.author.firstName} {quote.author.lastName}
+              </h3>
+            </div>
           </li>
         ))}
       </ul>

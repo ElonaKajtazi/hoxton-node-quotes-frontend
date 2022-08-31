@@ -3,9 +3,15 @@ import { useEffect, useState } from "react";
 import { Quotes } from "./pages/Quotes";
 import { RandomQuote } from "./pages/RandomQuote";
 import { Navigate, Route, Routes } from "react-router-dom";
+export type AuthorType = {
+  firstName: string
+  lastName: string
+  age: number
+  image: string
+}
 export type QuoteType = {
   id: number;
-  author: string;
+  author: AuthorType
   quote: string;
 };
 function App() {

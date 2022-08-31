@@ -40,3 +40,21 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+img {
+  width: 250px;
+}
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 560px);
+  gap: 1rem;
+  place-content: center;
+}
+.quote-card {
+  width: 550px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
