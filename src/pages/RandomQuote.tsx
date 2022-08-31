@@ -20,7 +20,7 @@ export function RandomQuote({ randomQuote }) {
           <div className="author-info">
             <h2 className="quote">{randomQuote.quote}</h2>
             <h3 className="author">
-              ― {randomQuote.author.firstName} {randomQuote.author.lastName}
+              ― {randomQuote.author.firstName} {randomQuote.author.lastName} ({randomQuote.author.age})
             </h3>
           </div>
         </li>

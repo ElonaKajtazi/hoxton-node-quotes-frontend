@@ -18,7 +18,8 @@ export function Quotes({ quotes }: Props) {
             <div className="author-info">
               <h2 className="quote">{quote.quote}</h2>
               <h3 className="author">
-                ― {quote.author.firstName} {quote.author.lastName}
+                ― {quote.author.firstName} {quote.author.lastName} (
+                {quote.author.age})
               </h3>
             </div>
           </li>
