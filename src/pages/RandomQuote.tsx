@@ -14,13 +14,13 @@ export function RandomQuote({ randomQuote }) {
         <li className="quote-card">
           <img
             className="author-image"
-            src={randomQuote.author.image}
-            alt={randomQuote.author.firstName}
+            src={randomQuote.image}
+            alt={randomQuote.firstName}
           />
           <div className="author-info">
             <h2 className="quote">{randomQuote.quote}</h2>
             <h3 className="author">
-              ― {randomQuote.author.firstName} {randomQuote.author.lastName} ({randomQuote.author.age})
+              ― {randomQuote.firstName} {randomQuote.lastName} ({randomQuote.age})
             </h3>
           </div>
         </li>

@@ -12,14 +12,14 @@ export function Quotes({ quotes }: Props) {
           <li key={quote.id} className="quote-card">
             <img
               className="author-image"
-              src={quote.author.image}
-              alt={quote.author.firstName}
+              src={quote.image}
+              alt={quote.firstName}
             />
             <div className="author-info">
               <h2 className="quote">{quote.quote}</h2>
               <h3 className="author">
-                ― {quote.author.firstName} {quote.author.lastName} (
-                {quote.author.age})
+                ― {quote.firstName} {quote.lastName} (
+                {quote.age})
               </h3>
             </div>
           </li>
