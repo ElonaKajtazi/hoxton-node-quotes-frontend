@@ -3,15 +3,18 @@ import { useEffect, useState } from "react";
 import { Quotes } from "./pages/Quotes";
 import { RandomQuote } from "./pages/RandomQuote";
 import { Navigate, Route, Routes } from "react-router-dom";
-
+export type authorType = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  age: number;
+  image: string;
+};
 export type QuoteType = {
   id: number;
-  firstName: string
-  lastName: string
-  age: number
-  image: string
-  quote: string;
-  quantity: number
+  autthorId: number;
+  text: string;
+  author: authorType;
 };
 function App() {
   const [quotes, setQuotes] = useState<QuoteType[]>([]);

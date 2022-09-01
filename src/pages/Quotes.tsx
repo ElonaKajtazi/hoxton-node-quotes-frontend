@@ -12,20 +12,20 @@ export function Quotes({ quotes }: Props) {
           <li key={quote.id} className="quote-card">
             <img
               className="author-image"
-              src={quote.image}
-              alt={quote.firstName}
+              src={quote.author.image}
+              alt={quote.author.image}
             />
             <div className="author-info">
-              <h2 className="quote">{quote.quote}</h2>
+              <h2 className="quote">{quote.text}</h2>
               <h3 className="author">
-                ― {quote.firstName} {quote.lastName} (
-                {quote.age})
+                ― {quote.author.firstName} {quote.author.lastName} (
+                {quote.author.age})
               </h3>
             </div>
           </li>
         ))}
       </ul>
-      <Link to="/random">Random Quote</Link>
+      {/* <Link to="/random">Random Quote</Link> */}
     </>
   );
 }
